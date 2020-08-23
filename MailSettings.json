@@ -1,0 +1,10 @@
+{
+  "MailSettings": {
+    "Name": "name",
+    "Address": "email@domain.com",
+    "Host": "smtp.domain.org",
+    "Port": "587",
+    "Username": "postmaster@domain.com",
+    "Password": "password"    
+  }  
+}

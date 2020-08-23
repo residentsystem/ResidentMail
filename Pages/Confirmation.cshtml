@@ -1,0 +1,31 @@
+@page
+@model ConfirmationModel
+@{
+}
+
+<div class="container">
+    <section class="row">
+        <article class="col-sm-12 col-md-12 col-lg-8 col-center">
+            <div class="box-confirmation">
+                <p>@Model.Confirmation[0]</p>
+                <p class="confirmation">@Model.Confirmation[1]</p>
+                <img src="~/images/logo/bluelogo.png" alt="Resident System logo" height="60" width="220" />
+            </div>
+        </article>
+    </section>
+</div>
+
+<div class="banner-message">
+<div class="container">
+    <section class="row">
+        <article class="col-sm-12 col-md-12 col-lg-8 col-center">
+            <div class="box-message">
+                <h2>@Model.Confirmation[2]</h2>
+                <p>@Model.Confirmation[3]</p>
+                <p>@Model.Confirmation[4]</p>
+                <a class="btn btn-primary" href="~/index" title="Back" role="button">Back</a>
+            </div>
+        </article>
+    </section>
+</div>
+</div>
