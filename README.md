@@ -1,4 +1,4 @@
-# Resident Email
+# ResidentMail
 Provide a web form to send email.
 
 ## Getting Started
@@ -63,8 +63,8 @@ Runtime Environment:
 
 1. Create the directory on your local machine where you want this project to reside.
 
-> \\> mkdir C:\Project\ResidentMailCore<br>
-> \\> cd .\Project\ResidentMailCore 
+> \\> mkdir C:\Project\ResidentMail<br>
+> \\> cd .\Project\ResidentMail
 
 2. Open your browser and navigate to Github. Access the main page of the <a href="https://github.com/residentsystem/ResidentMail">repository</a>.
 
@@ -75,7 +75,7 @@ Runtime Environment:
 
 2. Select Download ZIP.
 
-3. Extract the ZIP file in your project folder (ex C:\Project\ResidentMailCore).
+3. Extract the ZIP file in your project folder (ex C:\Project\ResidentMail).
 
 #### Clone using git
 1. Under the repository name, click Clone or download.
@@ -84,7 +84,7 @@ Runtime Environment:
 
 3. Open Git Bash.
 
-4. Navigate to the project directory where you want the cloned directory to be made (C:\Project\ResidentMailCore).
+4. Navigate to the project directory where you want the cloned directory to be made (C:\Project\ResidentMail).
 
 5. Type git clone, and then paste the URL you copied in Step 2.
 
@@ -96,7 +96,7 @@ Runtime Environment:
 
 1. Change the current working directory to the project folder and open the project using Visual Studio Code.
 
-> \\> cd C:\Project\ResidentMailCore\ResidentMail<br>
+> \\> cd C:\Project\ResidentMail\ResidentMail<br>
 > \\> code . 
 
 2. Using VS Code, select Terminal -> New Terminal. Inside the terminal, run the application.
@@ -121,7 +121,7 @@ When you are done with development and testing and ready to make use of the appl
 1. Create a folder where you wish to have the published files located. Change the current working directory to the project folder.
 
 > \\> mkdir C:\Publish\ResidentMail<br>
-> \\> cd C:\Project\ResidentMailCore\ResidentMail
+> \\> cd C:\Project\ResidentMail\ResidentMail
 
 2. Run this command to Publish the application.
 

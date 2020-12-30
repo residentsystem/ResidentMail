@@ -7,43 +7,57 @@
     <section class="row">
         <article class="col-sm-12">
             <header>
-                <h1 class="heading">Resident Mail</h1>
+                <h1 class="heading">ResidentMail</h1>
             </header>
         </article>
     </section>
 </div>
 
 <div class="container">
-        <section class="row">
-            <article class="col-sm-8 col-center">
+    <section class="row">
+        <article class="col-sm-8 col-center">
 
-                <form method="post" asp-page="/confirmation">
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                    <div class="form-group">
-                        <label asp-for="Contact.Name" class="control-label">Name</label>
-                        <input asp-for="Contact.Name" class="form-control" placeholder="Enter your name" />
-                        <span asp-validation-for="Contact.Name" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Contact.Email">Email:</label>
-                        <input asp-for="Contact.Email" class="form-control" placeholder="Enter your email address" />
-                        <span asp-validation-for="Contact.Email" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Contact.Subject">Subject:</label>
-                        <input asp-for="Contact.Subject" class="form-control" placeholder="Enter a subject" />
-                        <span asp-validation-for="Contact.Subject" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Contact.Message">Message:</label>
-                        <textarea rows="8" cols="20" asp-for="Contact.Message" class="form-control" placeholder="Enter your message"></textarea>
-                        <span asp-validation-for="Contact.Message" class="text-danger"></span>
-                    </div>
-                    <div>
-                        <input class="btn btn-dark" type="submit" value="Send Email" />
-                    </div>
-                </form>
+            <form method="post" asp-page="/confirmation">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <!-- <label asp-for="Contact.Name" class="control-label"></label> -->
+                    <input asp-for="Contact.Name" class="form-control" placeholder="Your Name" />
+                    <span asp-validation-for="Contact.Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <!-- <label asp-for="Contact.Email"></label> -->
+                    <input asp-for="Contact.Email" class="form-control" placeholder="Your Email" />
+                    <span asp-validation-for="Contact.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <!-- <label asp-for="Contact.Subject"></label> -->
+                    <input asp-for="Contact.Subject" class="form-control" placeholder="Your Subject" />
+                    <span asp-validation-for="Contact.Subject" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <!-- <label asp-for="Contact.Message"></label> -->
+                    <textarea rows="8" cols="20" asp-for="Contact.Message" class="form-control" placeholder="Your Message"></textarea>
+                    <span asp-validation-for="Contact.Message" class="text-danger"></span>
+                </div>
+                <div class="form-group equation">
+                    <label asp-for="Contact.Sum">I'm not a robot @Model.FirstNumber + @Model.SecondNumber = </label>
+                    <input asp-for="Contact.Sum" class="form-control" />
+                    <span asp-validation-for="Contact.Sum" class="text-danger"></span>
+                </div>
+                <div class="form-group honey">
+                    <!-- Input field for h o n e y p o t -->
+                    <!-- <label asp-for="Contact.HoneyInput"></label> -->
+                    <input asp-for="Contact.Honey" id="reachout" class="form-control" autocomplete="off" value="" />
+                </div>
+                <div>
+                    <input class="btn btn-dark btn-lg" type="submit" value="Send" />
+                </div>
+            </form>
 
-            </article>
-        </section>
-    </div>
+        </article>
+    </section>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

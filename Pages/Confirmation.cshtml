@@ -3,29 +3,17 @@
 @{
 }
 
-<div class="container">
-    <section class="row">
-        <article class="col-sm-12 col-md-12 col-lg-8 col-center">
-            <div class="box-confirmation">
-                <p>@Model.Confirmation[0]</p>
-                <p class="confirmation">@Model.Confirmation[1]</p>
-                <img src="~/images/logo/bluelogo.png" alt="Resident System logo" height="60" width="220" />
-            </div>
-        </article>
-    </section>
-</div>
+<div class="container confirmation">
+    <section class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="confirmation-message">
+            <img src="~/images/logo/bluelogo.png" alt="Resident System logo" height="160" width="160" />
+            <h1>@Model.ConfirmationMessage[0]</h1>
+            <p>@Model.ConfirmationMessage[1]</p>
+            <p>@Model.ConfirmationMessage[2]</p>
 
-<div class="banner-message">
-<div class="container">
-    <section class="row">
-        <article class="col-sm-12 col-md-12 col-lg-8 col-center">
-            <div class="box-message">
-                <h2>@Model.Confirmation[2]</h2>
-                <p>@Model.Confirmation[3]</p>
-                <p>@Model.Confirmation[4]</p>
-                <a class="btn btn-primary" href="~/index" title="Back" role="button">Back</a>
-            </div>
-        </article>
+            <p>@Model.SpamMessage</p>
+
+            <a class="btn btn-primary" href="~/index#contact" title="Back" role="button">Back</a>
+        </div>
     </section>
-</div>
 </div>

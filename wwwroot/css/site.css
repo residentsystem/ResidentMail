@@ -1,13 +1,28 @@
 ﻿/* -------------------------------------------- Font -------------------------------------------- */
 
 @font-face {
+    font-family: 'Rajdhani-Bold';
+    src: url('../font/rajdhani/Rajdhani-Bold.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Rajdhani-Light';
     src: url('../font/rajdhani/Rajdhani-Light.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Rajdhani-Bold';
-    src: url('../font/rajdhani/Rajdhani-Bold.ttf') format('truetype');
+    font-family: 'Rajdhani-Medium';
+    src: url('../font/rajdhani/Rajdhani-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rajdhani-Regular';
+    src: url('../font/rajdhani/Rajdhani-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rajdhani-SemiBold';
+    src: url('../font/rajdhani/Rajdhani-SemiBold.ttf') format('truetype');
 }
 
 /* -------------------------------------------- Body -------------------------------------------- */
@@ -26,7 +41,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: Rajdhani-Light, sans-serif;
+    font-family: Rajdhani-SemiBold, sans-serif;
     font-size: 110%;
     line-height: 1.4em;
     width: 100%;
@@ -103,28 +118,6 @@ a.btn-dark:hover {
     color: #f0f0f0;
 }
 
-/* -------------------------------------------- Form -------------------------------------------- */
-
-label, input, textarea, input.btn-dark, a.btn-dark {
-    font-weight: 800;
-}
-
-input.btn-dark, a.btn-dark {
-    background-color: #111;
-    font-weight: 800;
-    margin-top: 0.5em;
-}
-
-form a.btn-dark {
-    background-color: #111;
-    color: #f0f0f0;
-}
-
-form a.btn-dark:hover {
-    background-color: #2b2b2b;
-    color: #f0f0f0;
-}
-
 /* -------------------------------------------- General -------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
@@ -162,73 +155,6 @@ a:hover, a:active, a:focus {
 
 strong {
     font-weight: bold;
-}
-
-/* -------------------------------------------- Confirmation -------------------------------------------- */
-
-.box-confirmation, .box-message {
-    font-weight: 800;
-    overflow: hidden;
-    padding: 2em;
-    width: 100%;
-}
-
-.banner-message {
-    width: 100%;
-    height: 100%;
-}
-
-.banner-message {
-    background-color: rgba(240, 240, 240, 0.6);
-    border-right: 0.06em solid #d1d1d1;
-    border-bottom: 0.06em solid #d1d1d1;
-}
-
-.box-confirmation {
-    height: 100%;
-}
-
-.box-message {
-    height: 300px;
-}
-
-.box-confirmation h1, .box-confirmation p {
-    display: block;
-    text-align: center;
-}
-
-.box-confirmation .confirmation {
-    font-size: 1.3em;
-    font-weight: 900;
-}
-
-.box-message h2, .box-message p {
-    text-align: left;
-}
-
-.box-configuration p, .box-message p {
-    margin-bottom: 8px;
-}
-
-.box-confirmation a, .box-message a {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-
-.box-confirmation img {
-    display: block;
-    height: 160px;
-    margin: 0 auto;
-    width: 160px;
-}
-
-.box-message .btn {
-    margin: 0;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
 }
 
 /* -------------------------------------------- Navbar -------------------------------------------- */
@@ -299,54 +225,4 @@ strong {
     color: #0093d0;
     font-size: 0.8em;
     font-weight: bold;
-}
-
-/* -------------------------------------------- Media -------------------------------------------- */
-
-/* Mobile Devices */
-
-@media screen and (min-width: 320px) and  (max-width: 414px) {
-    h1 {
-        font-size: 1.6em;
-    }
-
-    .box-display {
-        max-width: 100% !important;
-    }
-}
-
-/* Mobile and Tablet Devices */
-
-@media screen and (min-width: 320px) and  (max-width: 768px) {
-
-    .box-confirmation, .box-message {
-        margin: 0;
-        padding: 0;
-    }
-
-    .box-confirmation, .box-message {
-        width: 100%;
-    }
-
-    .box-confirmation h3, .box-message h3 {
-        font-size: 1em;
-    }
-
-    .box-confirmation a, .box-message a {
-        font-size: 0.8em;
-    }
-
-    .box-confirmation p, .box-message p {
-        font-size: 0.8em;
-    }
-}
-
-/* Tablet Landscape */
-@media screen and (min-width: 768px) {
-
-}
-
-/* Desktop Computers */
-@media screen and (min-width: 992px) {
-
 }

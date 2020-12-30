@@ -20,6 +20,9 @@ namespace ResidentMail
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddHttpContextAccessor();
+            services.AddDistributedMemoryCache();
+            services.AddSession();
 
             // Register a configuration instance to access the values of configuration file.
             services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
@@ -45,6 +48,8 @@ namespace ResidentMail
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {
